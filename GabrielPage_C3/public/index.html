@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veículos Blindados</title>
-    <link rel="stylesheet" href="/public/assets/css/style.css">
-    <link rel="stylesheet" href="/public/assets/js/script.js">
+    <title> Carros </title>
+    <script defer src="/public/assets/js/script.js"></script>
+    <link rel="stylesheet" href="/public/assets/css/style.css"">
+    <link rel="stylesheet" href="/public/assets/css/reset.css">
 </head>
+
 <body>
-    <main>
+    <main class="column">
+
         <header></header>
+
         <div class="flex-center column row-gap">
             <h1> Nossos veículos </h1>
             <p> São mais de 20 anos no mercado de carros blindados </p>
         </div>
+
+        <div class="carousel-container">
+            <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+            <div class="carousel-slide" id="carousel-slide">
+              <img src="/public/assets/images/fordedge.png" alt="Carro 1">
+              <img src="/public/assets/images/fordedge.png" alt="Carro 2">
+              <img src="/public/assets/images/fordedge.png" alt="Carro 3">
+            </div>
+            <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+        </div>
+
+        <footer></footer>
         
     </main>
+
 </body>
 </html>
