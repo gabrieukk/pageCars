@@ -1,3 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
 .column{
     display: flex;
     flex-direction: column;
@@ -13,21 +22,91 @@
     row-gap: 15px;
 }
 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+/*Css do Cabeçalho*/
+.container {
+  max-width: 1280px;
+  margin: auto;
+  transition: 1s;
+}
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 1s;
+}
+
+.flex img {
+  height: 100px;
+}
+
+header {
+  width: 100%;
+  padding: 60px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+header.rolagem {
+  background-color: #181818;
+  padding: 10px 4%;
+  transition: 1s;
+}
+
+header.rolagem img {
+  height: 50px;
+  transition: 1s;
+}
+
+header.rolagem a {
+  font-size: 14px;
+  transition: 1s;
+}
+
+header.rolagem a:hover {
+  font-size: 18px;
+  color: #ffe96b;
+  transition: 0.5s;
+}
+
+header ul {
+  list-style-type: none;
+  transition: 1s;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 40px;
+  transition: 1s;
+}
+
+header ul li a {
+  color: #fff;
+  text-shadow: 2px 6px 2px black;
+  transition: 1s;
+}
+
+header ul li a:hover {
+  font-size: 20px;
+  color: #ffe96b;
+  transition: 0.5s;
+}
+
+.car-text{
+  margin-top: 20rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  row-gap: 3rem;
+}
+
+/*Css do Carrosel */
   .carousel-container {
     position: relative;
     width: 500px;
     height: auto;
-    background-color: #646464;
+    background-color: rgba(100, 100, 100, 0.05);
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -49,7 +128,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(51, 51, 51, 0.8);
     border: none;
     cursor: pointer;
     z-index: 10;
@@ -59,7 +138,7 @@
   }
 
   .arrow:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(136, 136, 136);
   }
 
   .arrow-left {
@@ -69,4 +148,89 @@
   .arrow-right {
     right: 20px;
   }
+
+/*Estilização do contêiner-cards*/
+.cars{
+  color: #fff;
+}
+
+/*Css do Rodapé */
+  .footer {
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo img {
+    max-height: 250px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+  
+  .footer-section p {
+    transition: 0.5s;
+  }
+  
+  .footer-section p:hover {
+    color: #ffe96b;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    text-shadow: 2px 6px 2px black;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  .footer-section a:hover {
+    color: #ffe96b;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ffe96b;
+  }
+  
+  .linha2 {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  
+  
 

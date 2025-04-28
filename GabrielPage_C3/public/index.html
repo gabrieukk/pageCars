@@ -4,32 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Carros </title>
-    <script defer src="/public/assets/js/script.js"></script>
-    <link rel="stylesheet" href="/public/assets/css/style.css"">
-    <link rel="stylesheet" href="/public/assets/css/reset.css">
+    <script defer src="/GabrielPage_C3/public/assets/js/script.js"></script>
+    <link rel="stylesheet" href="/GabrielPage_C3/public/assets/css/style.css">
+    <link rel="stylesheet" href="/GabrielPage_C3/public/assets/css/reset.css">
 </head>
 
 <body>
-    <main class="column">
+    <main class="column flex-center">
 
-        <header></header>
+        <header id="header">
+            <div class="container">
+              <div class="flex">
+                <a href="#"><img src="/GabrielPage_C3/public/assets/images/logoMaior.png" alt="Logo C3" /></a>
+      
+                <nav>
+                  <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="">Carros</a></li>
+                    <li><a href="isac/isac.html">Serviços</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="">Contato</a></li>
+                  </ul>
+                </nav>
+      
+                <a href="https://www.eb.mil.br/" target="_blank">
+                    <img src= "/GabrielPage_C3/public/assets/images/exercito.png" alt="Logo Exercito Brasileiro"/>
+                </a>
+              </div>
+            </div>
+          </header>
 
-        <div class="flex-center column row-gap">
-            <h1> Nossos veículos </h1>
-            <p> São mais de 20 anos no mercado de carros blindados </p>
+        <div class="car-text flex-center column">
+            <div class="flex-center column row-gap">
+                <h1> Nossos veículos </h1>
+                <p> São mais de 20 anos no mercado de carros blindados </p>
+            </div>
+            <div>
+                <h2>Destaques</h2>
+            </div>
         </div>
 
         <div class="carousel-container">
             <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
             <div class="carousel-slide" id="carousel-slide">
-              <img src="/public/assets/images/fordedge.png" alt="Carro 1">
-              <img src="/public/assets/images/fordedge.png" alt="Carro 2">
-              <img src="/public/assets/images/fordedge.png" alt="Carro 3">
+              <img src="/GabrielPage_C3/public/assets/images/fordedge.png" alt="Carro 1">
+              <img src="/GabrielPage_C3/public/assets/images/fordedge.png" alt="Carro 2">
+              <img src="/GabrielPage_C3/public/assets/images/fordedge.png" alt="Carro 3">
             </div>
             <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
         </div>
 
-        <footer></footer>
+        <div class="cars">
+            <div>
+                <h1>Todos os nossos veículos</h1>
+            </div>  
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+
+              <div class="footer-logo">
+                <img src="/GabrielPage_C3/public/assets/images/logoMaior.png" alt="Logotipo" />
+              </div>
+      
+              <div class="footer-section">
+                <h4>Links Importantes</h4>
+                <ul>
+                  <li><a href="#link1">Politica de Privacidade</a></li>
+                  <li><a href="#link2">Termos e Condições</a></li>
+                </ul>
+              </div>
+      
+              <div class="footer-section">
+                <h4>Contatos</h4>
+                <p>11 2628-3139</p>
+                <p>11 9 9588-2370</p>
+                <p>carlosvilela.c3blindados@gmail.com</p>
+              </div>
+      
+              <div class="footer-section">
+                <h4>Endereço</h4>
+                <a href="https://maps.app.goo.gl/yejZwPafAhSSPEcj6"
+                  >R. África do Sul, 40 - Várzea de Baixo, São Paulo - SP,
+                  04730-020</a
+                >
+              </div>
+      
+              <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div>
+                  <a href="https://www.facebook.com/c3autosblindados" target="_blank">
+                    <img src="/GabrielPage_C3/public/assets/images/facebook.png" alt="facebook" />
+                  </a>
+                  <a href="https://www.instagram.com/c3autosblindados/" target="_blank">
+                    <img src="/GabrielPage_C3/public/assets/images/instagram.png" alt="Instagram" />
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+            <hr />
+
+            <div class="linha2">
+              <h5>2025 C3 Autos Blindados &copy;. All rights reserved.</h5>
+            </div>
+          </footer>
         
     </main>
 
