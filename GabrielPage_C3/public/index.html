@@ -7,11 +7,14 @@
     <script defer src="/GabrielPage_C3/public/assets/js/script.js"></script>
     <link rel="stylesheet" href="/GabrielPage_C3/public/assets/css/style.css">
     <link rel="stylesheet" href="/GabrielPage_C3/public/assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Bebas+Neue&amp;family=New+Rocker&amp;family=Pirata+One&amp;family=Special+Gothic+Condensed+One&amp;family=Titan+One&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main class="column flex-center">
 
+    <main class="column">
+
+      <!--Aqui inicia-se o cabeçalho -->
         <header id="header">
             <div class="container">
               <div class="flex">
@@ -33,33 +36,49 @@
               </div>
             </div>
           </header>
-
+        <!--Aqui finaliza-se o cabeçalho -->
+        
+        <!--Aqui inicia-se um bloco de textos -->
         <div class="car-text flex-center column">
             <div class="flex-center column row-gap">
                 <h1> Nossos veículos </h1>
-                <p> São mais de 20 anos no mercado de carros blindados </p>
+                <p> A C3 está há mais de 20 anos no mercado de carros blindados, proporcionando para você e sua família bem-estar, segurança e proteção. </p>
             </div>
             <div>
                 <h2>Destaques</h2>
             </div>
         </div>
-
-        <div class="carousel-container">
-            <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
-            <div class="carousel-slide" id="carousel-slide">
-              <img src="/GabrielPage_C3/public/assets/images/fordedge.png" alt="Carro 1">
-              <img src="/GabrielPage_C3/public/assets/images/fordedge.png" alt="Carro 2">
-              <img src="/GabrielPage_C3/public/assets/images/fordedge.png" alt="Carro 3">
+        <!--Aqui finaliza-se um bloco de textos -->
+        
+        <!--Aqui inicia-se o carrosel -->
+        <div class="flex-center">
+            <div class="carousel-container">
+                <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                <div class="carousel-slide" id="carousel-slide">
+                  <img src="/GabrielPage_C3/public/assets/images/FordEdgeRemoveBackg.png" alt="Carro 1">
+                  <img src="/GabrielPage_C3/public/assets/images/FordEdgeRemoveBackg.png" alt="Carro 2">
+                  <img src="/GabrielPage_C3/public/assets/images/FordEdgeRemoveBackg.png" alt="Carro 3">
+                </div>
+                <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
             </div>
-            <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
         </div>
+        <!--Aqui finaliza-se o carrosel -->
 
-        <div class="cars">
+        <!--Aqui inicia-se os cards dos carros -->
+        <div class="cars flex-center">
             <div>
                 <h1>Todos os nossos veículos</h1>
             </div>  
-        </div>
 
+            <div class="conteiner-cards-cars">
+          
+
+            </div>
+        </div>
+        <!--Aqui finaliza-se os cards dos carros -->
+        
+  
+      <!--Aqui inicia-se o rodapé -->
         <footer class="footer">
             <div class="footer-container">
 
@@ -109,6 +128,7 @@
               <h5>2025 C3 Autos Blindados &copy;. All rights reserved.</h5>
             </div>
           </footer>
+          <!--Aqui finaliza-se o rodapé -->
         
     </main>
 
