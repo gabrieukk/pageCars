@@ -2,7 +2,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: black;
   font-family: "Alfa Slab One", serif;
 }
@@ -95,10 +94,14 @@ header ul li a:hover {
 }
 
 .car-text{
-  margin-top: 25rem;
+  margin-top: 14rem;
   margin-bottom: 2rem;
   color: #fff;
   row-gap: 3rem;
+}
+
+.car-text h2{
+  color: #ffe96b;
 }
 
 /*Css do Carrosel */
@@ -150,17 +153,13 @@ header ul li a:hover {
   }
 
 /*Estilização do contêiner-cards*/
-.cars{
+.cars-text{
   color: #fff;
+  margin-top: 5rem;
 }
 
-.cars h1{
-  margin-top: 1rem;
-}
-
-.conteiner-cards-cars{
-  flex-direction: row;
-  justify-content: space-between;
+.cars-text h1{
+  text-align: center;
 }
 
 /*Css do Rodapé */
@@ -241,55 +240,6 @@ header ul li a:hover {
   }
 
 
-  .card {
-    width: 220px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-image {
-    padding: 4px;
-    background: #fff;
-  }
-  
-  .card-image img {
-    width: 100%;
-    border-radius: 4px;
-  }
-  
-  .card-content {
-    background: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .card-content h3 {
-    margin: 10x 0 5px;
-    font-size: 16px;
-    color: #ffcc00;
-    font-weight: bold;
-  }
-  
-  .card-content p {
-    margin: 5px 0;
-    font-size: 12px;
-    line-height: 1.4;
-  }
-  
-  .card-footer {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .price {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
   .whatsapp-button {
     background: #25D366;
     padding: 8px;
@@ -303,6 +253,86 @@ header ul li a:hover {
     width: 20px;
     height: 20px;
   }
-  
-  
 
+  /*Cards*/
+
+  .container-card {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding-top: 30px;
+  }
+  
+  .card {
+    background:#222 ;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .info {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .info h2 {
+    font-size: 18px;
+    color: #FFD700;
+    margin: 0;
+  }
+  
+  .info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .info ul li {
+    margin-bottom: 4px;
+  }
+  
+  .price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .botao-vendedor {
+    background-color: #24dd3d; 
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px; 
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: "Alfa Slab One", serif;
+    margin-bottom: 30px;
+  }
+
+  .botao-vendedor a{
+    color: #fffafa;
+  }
+  
+  .botao-vendedor:hover {
+    background-color: #7af180; /* muda um pouco no hover pra dar sensação de clique */
+  }
+  
+  
+  
+  
+  
